@@ -62,9 +62,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 w-full max-w-[453px]"
+          className="mt-8 w-full max-w-2xl"
         >
-          <div className="flex h-[265px] flex-col rounded-2xl border border-border bg-card/70 p-4 backdrop-blur-xl glow-border">
+          <div className="flex flex-col rounded-2xl border border-border bg-card/70 p-4 backdrop-blur-xl glow-border">
             <textarea
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
