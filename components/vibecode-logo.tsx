@@ -2,42 +2,12 @@ import { cn } from '@/lib/utils'
 
 export function VibecodeMark({ className }: { className?: string }) {
   return (
-    <span
-      className={cn(
-        'relative inline-flex items-center justify-center rounded-[28%] border border-border bg-transparent',
-        className,
-      )}
+    <img
+      src="/vibecode-logo.png"
+      alt=""
       aria-hidden="true"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        className="h-[58%] w-[58%]"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Code brackets: </> */}
-        <path
-          d="M8.5 7 4 12l4.5 5"
-          stroke="var(--foreground)"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M15.5 7 20 12l-4.5 5"
-          stroke="var(--foreground)"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M13.5 5.5 10.5 18.5"
-          stroke="var(--foreground)"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    </span>
+      className={cn('inline-block object-contain', className)}
+    />
   )
 }
 
