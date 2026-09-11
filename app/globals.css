@@ -115,29 +115,17 @@
   );
 }
 
-/* Thin gradient on a single word — the one place accent appears in text */
-@utility accent-word {
-  background-image: linear-gradient(
-    100deg,
-    var(--foreground),
-    var(--accent-glow)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-/* Seamless subtle grey outline + soft accent glow so the input isn't "dead" */
+/* Seamless subtle grey outline + soft white glow so the input isn't "dead" */
 @utility glow-border {
   box-shadow:
     0 0 0 1px oklch(1 0 0 / 10%),
-    0 0 24px -6px oklch(0.7 0.13 255 / 18%);
+    0 0 24px -6px oklch(1 0 0 / 10%);
   transition: box-shadow 0.25s ease;
 }
 .glow-border:focus-within {
   box-shadow:
     0 0 0 1px oklch(1 0 0 / 18%),
-    0 0 32px -4px oklch(0.7 0.13 255 / 30%);
+    0 0 32px -4px oklch(1 0 0 / 16%);
 }
 
 .glow-orb {

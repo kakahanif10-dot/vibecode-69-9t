@@ -39,11 +39,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl"
+          className="text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-3xl"
         >
           Build software
           <br />
-          by simply <span className="accent-word">describing</span> it
+          by simply describing it
         </motion.h1>
 
         <motion.p
@@ -93,7 +93,7 @@ export function Hero() {
               </button>
               <Button
                 onClick={start}
-                className="rounded-lg bg-primary font-medium text-primary-foreground transition-all hover:shadow-[0_0_20px_-4px_oklch(0.7_0.13_255_/_45%)] active:translate-y-px"
+                className="rounded-lg bg-primary font-medium text-primary-foreground transition-all hover:shadow-[0_0_20px_-4px_oklch(1_0_0_/_30%)] active:translate-y-px"
               >
                 Start building
                 <ArrowRight className="ml-1 h-4 w-4" />
