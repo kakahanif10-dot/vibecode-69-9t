@@ -4,7 +4,7 @@ export function VibecodeMark({ className }: { className?: string }) {
   return (
     <span
       className={cn(
-        'relative inline-flex items-center justify-center rounded-[10px] bg-primary',
+        'relative inline-flex items-center justify-center rounded-[28%] border border-border bg-transparent',
         className,
       )}
       aria-hidden="true"
@@ -12,28 +12,28 @@ export function VibecodeMark({ className }: { className?: string }) {
       <svg
         viewBox="0 0 24 24"
         fill="none"
-        className="h-[62%] w-[62%]"
+        className="h-[58%] w-[58%]"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Stylized code-pulse: chevrons wrapping a spark */}
+        {/* Code brackets: </> */}
         <path
-          d="M8.5 6.5 4 12l4.5 5.5"
-          stroke="var(--primary-foreground)"
-          strokeWidth="2.1"
+          d="M8.5 7 4 12l4.5 5"
+          stroke="var(--foreground)"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
-          d="M15.5 6.5 20 12l-4.5 5.5"
-          stroke="var(--primary-foreground)"
-          strokeWidth="2.1"
+          d="M15.5 7 20 12l-4.5 5"
+          stroke="var(--foreground)"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
-          d="M13.2 4.5 10.8 19.5"
-          stroke="var(--primary-foreground)"
-          strokeWidth="2.1"
+          d="M13.5 5.5 10.5 18.5"
+          stroke="var(--foreground)"
+          strokeWidth="2"
           strokeLinecap="round"
         />
       </svg>
