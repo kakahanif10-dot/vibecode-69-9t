@@ -23,13 +23,13 @@ export function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden px-4 pt-40 pb-24">
+    <section className="relative overflow-hidden px-4 pt-28 pb-20">
       <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3.5 py-1.5 text-xs text-muted-foreground backdrop-blur"
+          className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3.5 py-1.5 text-xs text-muted-foreground backdrop-blur"
         >
           <Sparkles className="h-3.5 w-3.5 text-primary" />
           Now generating full-stack apps in real time
@@ -39,18 +39,18 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="text-balance text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl"
+          className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl"
         >
           Build software
           <br />
-          by simply <span className="text-foreground">describing it</span>
+          by simply <span className="accent-word">describing</span> it
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.12 }}
-          className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground"
+          className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground"
         >
           Vibecode is the AI software generator. Turn a plain-language idea into
           a real, deployable app — with instant preview, live code, and one-click
@@ -62,7 +62,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-10 w-full max-w-2xl"
+          className="mt-8 w-full max-w-2xl"
         >
           <div className="rounded-2xl border border-border bg-card/70 p-2 backdrop-blur-xl glow-border">
             <textarea
@@ -93,7 +93,7 @@ export function Hero() {
               </button>
               <Button
                 onClick={start}
-                className="rounded-lg bg-primary font-medium text-primary-foreground hover:opacity-90"
+                className="rounded-lg bg-primary font-medium text-primary-foreground transition-all hover:shadow-[0_0_20px_-4px_oklch(0.7_0.13_255_/_45%)] active:translate-y-px"
               >
                 Start building
                 <ArrowRight className="ml-1 h-4 w-4" />
