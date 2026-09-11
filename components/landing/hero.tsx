@@ -62,7 +62,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 w-full max-w-xl lg:max-w-[36rem]"
+          className="mt-8 w-full max-w-xs"
         >
           <div className="rounded-2xl border border-border bg-card/70 p-2 backdrop-blur-xl glow-border">
             <textarea
@@ -79,7 +79,7 @@ export function Hero() {
                   start()
                 }
               }}
-              rows={3}
+              rows={10}
               placeholder="Ask Vibecode to build a dashboard for my coffee shop..."
               className="w-full resize-none bg-transparent px-4 py-3 text-left text-[15px] leading-relaxed text-foreground placeholder:text-muted-foreground focus:outline-none"
             />
