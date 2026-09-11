@@ -50,7 +50,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.12 }}
-          className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground"
+          className="mt-4 max-w-md text-pretty text-xs leading-relaxed text-muted-foreground"
         >
           Vibecode is the AI software generator. Turn a plain-language idea into
           a real, deployable app — with instant preview, live code, and one-click
