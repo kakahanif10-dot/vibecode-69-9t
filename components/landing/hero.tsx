@@ -64,20 +64,14 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 w-full max-w-[453px]"
         >
-          <div className="flex items-center gap-2 rounded-full border border-border bg-card/70 px-2 backdrop-blur-xl glow-border">
-            <button
-              type="button"
-              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground"
-              aria-label="Attach a file"
-            >
-              <Paperclip className="h-4 w-4" />
-            </button>
-            <input
+          <div className="flex h-[265px] flex-col rounded-2xl border border-border bg-card/70 p-4 backdrop-blur-xl glow-border">
+            <textarea
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               onKeyDown={(e) => {
                 if (
                   e.key === 'Enter' &&
+                  !e.shiftKey &&
                   !e.nativeEvent.isComposing &&
                   e.keyCode !== 229
                 ) {
@@ -85,17 +79,26 @@ export function Hero() {
                   start()
                 }
               }}
-              placeholder="Ask Vibecode to build..."
-              className="h-[38px] w-full bg-transparent text-left text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
+              placeholder="Ask Vibecode to build a dashboard for my coffee shop..."
+              className="w-full flex-1 resize-none bg-transparent text-left text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
             />
-            <Button
-              onClick={start}
-              size="icon"
-              className="h-8 w-8 shrink-0 rounded-full bg-primary text-primary-foreground transition-all hover:shadow-[0_0_20px_-4px_oklch(1_0_0_/_30%)] active:translate-y-px"
-              aria-label="Start building"
-            >
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+            <div className="flex items-center justify-between">
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-full text-sm text-muted-foreground transition-colors hover:text-foreground"
+                aria-label="Attach a file"
+              >
+                <Paperclip className="h-4 w-4" />
+                Attach
+              </button>
+              <Button
+                onClick={start}
+                className="rounded-full bg-primary text-primary-foreground transition-all hover:shadow-[0_0_20px_-4px_oklch(1_0_0_/_30%)] active:translate-y-px"
+              >
+                Start building
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
 
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
