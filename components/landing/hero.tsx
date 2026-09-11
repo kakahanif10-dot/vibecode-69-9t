@@ -62,7 +62,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 w-full max-w-2xl"
+          className="mt-8 w-full max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]"
         >
           <div className="rounded-2xl border border-border bg-card/70 p-2 backdrop-blur-xl glow-border">
             <textarea
