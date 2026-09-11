@@ -9,19 +9,10 @@ export function VibecodeMark({ className }: { className?: string }) {
       aria-label="Vibecode"
       className={cn('inline-block', className)}
     >
-      <rect
-        x="1"
-        y="1"
-        width="38"
-        height="38"
-        rx="11"
-        className="fill-transparent stroke-border"
-        strokeWidth="1.5"
-      />
       <path
-        d="M16.5 15 12 20l4.5 5M23.5 15 28 20l-4.5 5M21.5 13.5l-3 13"
+        d="M15 13 8 20l7 7M25 13l7 7-7 7M23 9l-6 22"
         className="stroke-foreground"
-        strokeWidth="2"
+        strokeWidth="3.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
